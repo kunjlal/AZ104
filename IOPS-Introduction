@@ -1,0 +1,9 @@
+IOPS and Throughput on Disk
+
+IOPS measures the number of read and write operations per second, while throughput measures the number of bits read or written per second.
+
+Although they measure different things, they generally follow each other as IO operations have about the same size.
+
+If you have large files, you simply need more IO operations to read the entire file. The file size has no effect on the IOPS as it measures the number of clusters read or written, not the number of files.
+
+If you have small files, there will be more overhead, so while the IOPS and throughput look good, you may experience a lower actual performance.
